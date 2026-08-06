@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI大模型应用开发学习平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="menuButton" aria-label="展开课程目录">
+      <span class="brand-mark">AI</span><strong>AI大模型应用开发学习平台</strong>
+    </button>
+    <div class="search-wrap">
+      <span class="material-symbols-rounded">search</span>
+      <input id="searchInput" type="search" placeholder="搜索 RAG、Embedding、LangChain…" autocomplete="off">
+      <div id="searchResults" class="search-results" hidden></div>
+    </div>
+    <div class="top-actions">
+      <span class="material-symbols-rounded">menu_book</span><span>学习中心</span>
+      <button class="icon-button" id="themeButton" aria-label="切换夜间模式"><span class="material-symbols-rounded">dark_mode</span></button>
+      <span class="avatar">L</span>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="course-meta">
+      <strong>大模型应用开发：从基础到实战</strong>
+      <div class="progress-line"><span>学习进度</span><b id="progressText">0%</b></div>
+      <div class="progress-track"><i id="progressBar"></i></div>
+    </div>
+    <nav id="courseTree" aria-label="课程目录"></nav>
+  </aside>
+
+  <main class="main">
+    <div class="lesson-bar">
+      <div id="breadcrumb">学习路径</div>
+      <div class="lesson-nav">
+        <button id="prevButton"><span class="material-symbols-rounded">chevron_left</span>上一节</button>
+        <button id="nextButton">下一节<span class="material-symbols-rounded">chevron_right</span></button>
+      </div>
+    </div>
+    <article id="lesson" class="lesson" aria-live="polite"></article>
+    <footer class="lesson-footer">
+      <span id="lessonCount"></span>
+      <button id="completeButton" class="complete-button"><span class="material-symbols-rounded">check_circle</span><span>标记为已学习</span></button>
+    </footer>
+  </main>
+
+  <div class="scrim" id="scrim"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="app.js?v=20260806-3"></script>
+</body>
+</html>
