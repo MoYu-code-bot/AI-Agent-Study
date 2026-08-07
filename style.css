@@ -15,3 +15,5 @@ body.dark{--bg:#091321;--surface:#0e1a29;--surface-2:#112b2c;--text:#eef5f4;--mu
 .quiz-option{padding:5px 7px;border-radius:6px}.quiz-option.correct{background:#e8f7f2;color:#087866}.quiz-option.incorrect{background:#fff0ee;color:#b42318}.quiz-feedback{min-height:24px;margin:8px 0;font-weight:600}.quiz-feedback.correct{color:#087866}.quiz-feedback.incorrect{color:#b42318}.quiz-feedback.pending{color:#9a6700}.quiz-submit{padding:8px 16px;border:0;border-radius:7px;background:var(--accent);color:#fff;font-weight:600;cursor:pointer}.quiz-submit:hover{background:var(--accent-strong)}
 #practice>strong{display:block;font-size:17px;line-height:1.5}#practice>p{font-size:15px;line-height:1.8}
 .lesson p,.lesson li{font-size:16px;line-height:1.85}
+.avatar{display:block;object-fit:cover;border:1px solid #d8ebe5}
+body.dark .avatar{border-color:#36544f}
